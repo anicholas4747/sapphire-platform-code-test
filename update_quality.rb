@@ -1,6 +1,12 @@
 require 'award'
 
 def update_quality(awards)
+  awards.each { |award| award.update}
+end
+  
+# legacy code below
+=begin
+def update_quality(awards)
   awards.each do |award|
     if award.name != 'Blue First' && award.name != 'Blue Compare'
       if award.quality > 0
@@ -47,3 +53,4 @@ def update_quality(awards)
     end
   end
 end
+=end

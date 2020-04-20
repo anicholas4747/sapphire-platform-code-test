@@ -1,1 +1,4 @@
 -I. --color
+--format documentation 
+--color 
+--order=default
